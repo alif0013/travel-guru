@@ -36,7 +36,8 @@ const Login = () => {
         .then(res => {
             console.log(res.user)
             toast.success('User logged in successfully');
-             // navigate after login
+
+             // private route navigate after login
              navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
